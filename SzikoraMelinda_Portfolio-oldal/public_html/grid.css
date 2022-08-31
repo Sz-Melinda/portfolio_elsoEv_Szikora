@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+
+/* GRIDEK */
+
+main{
+    display: grid;
+    
+    grid-template-areas:
+        "h h h h as  "
+        "n n n n n "
+        "a a a a a "
+        "f f f f f "
+        ;
+}
+
+nav{
+    grid-area: n;
+}
+
+aside{
+    grid-area: as;
+}
+
+header{
+    grid-area: h;
+}
+
+article{
+    grid-area: a;
+}
+
+footer{
+    grid-area: f;
+}
+
+
+
+/* RESZPONZIVITÁS */
+
+@media screen and (max-width: 800px){
+    
+    main{
+        display: grid;
+
+        grid-template-areas:
+            "h h "
+            "as as "
+            "n n "
+            "a a "
+            "f f "
+            ;
+    }
+
+}
